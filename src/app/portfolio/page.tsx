@@ -1,6 +1,7 @@
 import Header from '@/components/landing/header';
 import Footer from '@/components/landing/footer';
 import { PortfolioCard } from '@/components/landing/portfolio-card';
+import { SponsorCard } from '@/components/landing/sponsor-card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const projects = [
@@ -40,6 +41,7 @@ export default function PortfolioPage() {
             {projects.map((project, index) => (
               <PortfolioCard key={index} {...project} />
             ))}
+            <SponsorCard />
           </div>
         </div>
       </main>
