@@ -41,7 +41,9 @@ export default function PortfolioPage() {
             {projects.map((project, index) => (
               <PortfolioCard key={index} {...project} />
             ))}
-            <SponsorCard />
+          </div>
+          <div className="mt-12 flex justify-center">
+              <SponsorCard />
           </div>
         </div>
       </main>
