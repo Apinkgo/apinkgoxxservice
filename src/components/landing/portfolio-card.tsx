@@ -12,23 +12,21 @@ type PortfolioCardProps = {
 
 export function PortfolioCard({ title, description, tags, image }: PortfolioCardProps) {
   return (
-    <Card className="overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+    <Card className="group overflow-hidden rounded-lg border-none bg-transparent shadow-none transition-all duration-300 hover:bg-card hover:shadow-xl hover:-translate-y-1">
       {image && (
-        <div className="relative h-48 w-full">
+        <div className="relative h-56 w-full overflow-hidden rounded-t-lg">
           <Image
             src={image.imageUrl}
             alt={image.description}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
             data-ai-hint={image.imageHint}
           />
         </div>
       )}
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p className="text-muted-foreground mb-4">{description}</p>
+      <div className="p-4">
+        <CardTitle className="text-xl font-headline mb-2">{title}</CardTitle>
+        <p className="text-muted-foreground mb-4 text-sm">{description}</p>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge key={tag} variant="secondary">
@@ -36,7 +34,7 @@ export function PortfolioCard({ title, description, tags, image }: PortfolioCard
             </Badge>
           ))}
         </div>
-      </CardContent>
+      </div>
     </Card>
   );
 }
