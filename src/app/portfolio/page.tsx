@@ -42,7 +42,7 @@ export default function PortfolioPage() {
               <PortfolioCard key={index} {...project} />
             ))}
           </div>
-          <div className="mt-12 flex justify-center">
+          <div className="mt-20 flex justify-center">
               <SponsorCard />
           </div>
         </div>
