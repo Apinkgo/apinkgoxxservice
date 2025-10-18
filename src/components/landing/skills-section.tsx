@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { BrainCircuit, BarChart3, Lightbulb, ClipboardCheck } from 'lucide-react';
+import { BrainCircuit, BarChart3, Lightbulb, ClipboardCheck, Tag } from 'lucide-react';
 
 const skills = [
   {
@@ -22,6 +22,11 @@ const skills = [
     title: "Implementasi CRM",
     description: "Membantu Anda memilih dan mengimplementasikan sistem CRM yang tepat."
   },
+  {
+    icon: <Tag className="h-10 w-10 text-primary" />,
+    title: "Branding & ID Digital Produk",
+    description: "Konsultasi peningkatan branding dan implementasi tag ID digital pada produk."
+  },
 ]
 
 export default function SkillsSection() {
@@ -34,7 +39,7 @@ export default function SkillsSection() {
             Kami menggabungkan keahlian industri dengan inovasi teknologi untuk hasil terbaik.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill, index) => (
             <Card key={index} className="flex flex-col p-6 transition-shadow duration-300 hover:shadow-xl bg-background">
               <div className="mb-4">{skill.icon}</div>
