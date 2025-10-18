@@ -9,7 +9,7 @@ export function SponsorCard() {
           title="Sponsor Apinkgo"
           height="225"
           width="300"
-          style={{ border: 0 }}
+          style={{ border: 0, borderRadius: '6px' }}
         ></iframe>
       </CardContent>
     </Card>
