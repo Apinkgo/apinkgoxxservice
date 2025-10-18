@@ -1,4 +1,4 @@
-import { ContactForm } from './contact-form';
+import { WhatsAppContactCard } from './whatsapp-contact-card';
 
 export default function ContactSection() {
   return (
@@ -15,7 +15,7 @@ export default function ContactSection() {
             </div>
           </div>
           <div>
-            <ContactForm />
+            <WhatsAppContactCard />
           </div>
         </div>
       </div>
