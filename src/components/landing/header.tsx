@@ -10,13 +10,17 @@ export default function Header() {
           <Package className="h-6 w-6 text-primary" />
           <span className="font-bold font-headline text-lg">Pointify Consulting</span>
         </Link>
-        <div className="flex flex-1 items-center justify-end space-x-2">
-          <nav className="flex items-center">
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link href="#contact">Hubungi Kami</Link>
-            </Button>
-          </nav>
-        </div>
+        <nav className="flex flex-1 items-center justify-end space-x-2">
+          <Button asChild variant="ghost">
+            <Link href="/#skills">Keahlian</Link>
+          </Button>
+          <Button asChild variant="ghost">
+            <Link href="/portfolio">Portofolio</Link>
+          </Button>
+          <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+            <Link href="#contact">Hubungi Kami</Link>
+          </Button>
+        </nav>
       </div>
     </header>
   );
