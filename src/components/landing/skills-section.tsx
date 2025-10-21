@@ -4,28 +4,28 @@ import { BrainCircuit, BarChart3, Lightbulb, ClipboardCheck, Tag } from 'lucide-
 const skills = [
   {
     icon: <BrainCircuit className="h-10 w-10 text-primary" />,
-    title: "Strategi Digital",
-    description: "Merancang peta jalan digital yang komprehensif untuk bisnis Anda."
+    title: "Strategi Digital Lokal",
+    description: "Bantu rancang jalur digital buat ngana pe usaha — dari promosi sampai pelayanan pelanggan."
   },
   {
     icon: <BarChart3 className="h-10 w-10 text-primary" />,
-    title: "Analisis Data Penjualan",
-    description: "Mengubah data mentah menjadi wawasan yang dapat ditindaklanjuti untuk pertumbuhan."
+    title: "Analisa Data Penjualan",
+    description: "Dari data sederhana, torang olah jadi insight biar ngana pe usaha bisa tumbuh lebih cepat."
   },
   {
     icon: <Lightbulb className="h-10 w-10 text-primary" />,
-    title: "Inovasi Proses Bisnis",
-    description: "Mengoptimalkan alur kerja untuk efisiensi dan produktivitas maksimal."
+    title: "Perbaikan Proses Kerja",
+    description: "Bikin sistem kerja lebih efisien, jadi nda banyak waktu terbuang percuma."
   },
   {
     icon: <ClipboardCheck className="h-10 w-10 text-primary" />,
     title: "Implementasi CRM",
-    description: "Membantu Anda memilih dan mengimplementasikan sistem CRM yang tepat."
+    description: "Supaya pelanggan bisa dikelola lebih rapi dan hubungan bisnis makin kuat."
   },
   {
     icon: <Tag className="h-10 w-10 text-primary" />,
     title: "Branding & ID Digital Produk",
-    description: "Konsultasi peningkatan branding dan implementasi tag ID digital pada produk."
+    description: "Dari logo, desain, sampe teknologi tag digital buat naikkan nilai produk lokal."
   },
 ]
 
@@ -34,9 +34,9 @@ export default function SkillsSection() {
     <section id="skills" className="py-16 md:py-24 bg-card border-y">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Keahlian Kami</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">Keahlian Torang</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Kami menggabungkan keahlian industri dengan inovasi teknologi untuk hasil terbaik.
+            Torang gabungkan pengalaman lapangan sama teknologi biar hasilnya nyata.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

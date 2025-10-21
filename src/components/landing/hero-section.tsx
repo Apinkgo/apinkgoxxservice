@@ -21,14 +21,14 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-primary/80" />
       <div className="relative z-10 container max-w-4xl px-4">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
-          Transformasi Digital untuk Penjualan Anda
+          Transformasi Digital untuk Ngana Pe Usaha
         </h1>
         <p className="mt-6 text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-          Pointify Consulting membantu bisnis konvensional untuk beradaptasi dengan teknologi terkini, meningkatkan efisiensi, dan mencapai target penjualan.
+          Pointify Consulting bantu ngana pe usaha konvensional biar bisa ikut maju deng teknologi sekarang — kerja jadi lebih ringan, pelanggan tambah banyak, dan penjualan makin lancar.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="#skills">Lihat Keahlian Kami</Link>
+            <Link href="#skills">Lihat Apa yang Torang Bisa Bantu</Link>
           </Button>
         </div>
       </div>

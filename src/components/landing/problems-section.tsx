@@ -4,23 +4,23 @@ import { TrendingDown, Users, Clock, Target } from 'lucide-react';
 const problems = [
   {
     icon: <TrendingDown className="h-10 w-10 text-destructive" />,
-    title: "Penjualan Stagnan",
-    description: "Kesulitan meningkatkan angka penjualan dari bulan ke bulan."
+    title: "Penjualan Macet-Macet Terus",
+    description: "Tiap bulan angka jualan nda naik-naik, padahal kerja so keras."
   },
   {
     icon: <Users className="h-10 w-10 text-primary" />,
-    title: "Sulit Mendapatkan Pelanggan Baru",
-    description: "Ketergantungan pada pelanggan lama dan kesulitan menjangkau pasar yang lebih luas."
+    title: "Susah Dapa Pelanggan Baru",
+    description: "Masih bergantung sama pelanggan lama, pasar baru susah dijangkau."
   },
   {
     icon: <Clock className="h-10 w-10 text-accent" />,
-    title: "Proses Manual yang Memakan Waktu",
-    description: "Banyak waktu terbuang untuk tugas administratif yang bisa diotomatisasi."
+    title: "Kerja Manual yang Buang-Buang Waktu",
+    description: "Banyak waktu habis ngatur catatan, stok, dan administrasi — padahal bisa otomatis."
   },
   {
     icon: <Target className="h-10 w-10 text-primary" />,
-    title: "Strategi Pemasaran Tidak Efektif",
-    description: "Upaya pemasaran yang tidak terukur dan tidak memberikan hasil yang diharapkan."
+    title: "Promosi Kurang Gigit",
+    description: "Sudah promosi di mana-mana, tapi hasilnya nda terasa dan pelanggan nda bertambah."
   },
 ]
 
@@ -29,9 +29,9 @@ export default function ProblemsSection() {
     <section id="problems" className="py-16 md:py-24 bg-background">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Masalah Dalam Penjualan Konvensional</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">Masalah yang Sering Dapa di Usaha Konvensional</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Banyak bisnis menghadapi tantangan yang sama. Kami hadir untuk memberikan solusi.
+            Banyak pelaku usaha alami hal yang sama. Torang datang bukan cuma kasi teori — tapi solusi nyata.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
