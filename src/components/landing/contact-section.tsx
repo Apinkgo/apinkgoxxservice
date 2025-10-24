@@ -2,7 +2,7 @@ import { WhatsAppContactCard } from './whatsapp-contact-card';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-background">
+    <section id="contact" className="py-16 md:py-24 bg-transparent">
       <div className="container px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-xl">

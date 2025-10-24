@@ -26,7 +26,7 @@ const problems = [
 
 export default function ProblemsSection() {
   return (
-    <section id="problems" className="py-16 md:py-24 bg-background">
+    <section id="problems" className="py-16 md:py-24 bg-transparent">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Masalah yang Sering Dapa di Usaha Konvensional</h2>
@@ -36,7 +36,7 @@ export default function ProblemsSection() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {problems.map((problem, index) => (
-            <Card key={index} className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+            <Card key={index} className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl bg-card">
               <div className="mb-4">{problem.icon}</div>
               <CardHeader className="p-0">
                 <CardTitle className="text-xl font-semibold">{problem.title}</CardTitle>

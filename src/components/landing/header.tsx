@@ -17,7 +17,7 @@ export default function Header() {
           <Button asChild variant="ghost">
             <Link href="/portfolio">Portofolio</Link>
           </Button>
-          <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+          <Button asChild>
             <Link href="#contact">Hubungi Kami</Link>
           </Button>
         </nav>

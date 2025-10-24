@@ -31,7 +31,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-16 md:py-24 bg-card border-y">
+    <section id="skills" className="py-16 md:py-24 bg-card/50 border-y">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Keahlian Torang</h2>
@@ -41,7 +41,7 @@ export default function SkillsSection() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill, index) => (
-            <Card key={index} className="flex flex-col p-6 transition-shadow duration-300 hover:shadow-xl bg-background">
+            <Card key={index} className="flex flex-col p-6 transition-shadow duration-300 hover:shadow-xl bg-card">
               <div className="mb-4">{skill.icon}</div>
               <CardHeader className="p-0">
                 <CardTitle className="text-xl font-semibold">{skill.title}</CardTitle>

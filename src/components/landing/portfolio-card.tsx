@@ -12,7 +12,7 @@ type PortfolioCardProps = {
 
 export function PortfolioCard({ title, description, tags, image }: PortfolioCardProps) {
   return (
-    <Card className="group overflow-hidden rounded-lg border-none bg-transparent shadow-none transition-all duration-300 hover:bg-card hover:shadow-xl hover:-translate-y-1">
+    <Card className="group overflow-hidden rounded-lg border bg-card shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       {image && (
         <div className="relative h-56 w-full overflow-hidden rounded-t-lg">
           <Image

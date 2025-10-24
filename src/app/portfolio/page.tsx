@@ -27,7 +27,7 @@ const projects = [
 
 export default function PortfolioPage() {
   return (
-    <div className="flex flex-col min-h-dvh bg-background">
+    <div className="flex flex-col min-h-dvh bg-transparent">
       <Header />
       <main className="flex-1 py-16 md:py-24">
         <div className="container px-4">
