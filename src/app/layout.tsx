@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: description,
     images: [
       {
-        url: '/og-image.png',
+        url: '/logog.png',
         width: 1200,
         height: 630,
         alt: title,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: title,
     description: description,
-    images: [`${siteUrl}/og-image.png`],
+    images: [`${siteUrl}/logog.png`],
   },
 };
 
