@@ -1,14 +1,24 @@
-<svg width="257" height="256" viewBox="0 0 257 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M185.75 60.5C187.917 60.5 189.792 61.1667 191.375 62.5C192.958 63.8333 193.75 65.5833 193.75 67.75V155.125C193.75 156.917 193.167 158.458 192 159.75C190.833 161.042 189.333 161.875 187.5 162.25L137.625 174.75V86.5L185.75 60.5Z" fill="url(#paint0_linear_2_3)"/>
-<path d="M121.625 86.5V174.75L62.75 160C61.0833 159.583 59.7083 158.75 58.625 157.5C57.5417 156.25 57 154.667 57 152.75V67.75C57 65.5833 57.7917 63.8333 59.375 62.5C60.9583 61.1667 62.8333 60.5 65 60.5L121.625 86.5Z" fill="url(#paint1_linear_2_3)"/>
-<defs>
-<linearGradient id="paint0_linear_2_3" x1="131" y1="120" x2="201" y2="120" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FACC15"/>
-<stop offset="1" stop-color="#A3E635"/>
-</linearGradient>
-<linearGradient id="paint1_linear_2_3" x1="57" y1="117" x2="122" y2="117" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4ADE80"/>
-<stop offset="1" stop-color="#34D399"/>
-</linearGradient>
-</defs>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="faceGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFD180"/>
+      <stop offset="100%" stop-color="#FF5722"/>
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#faceGradient)"/>
+  <path d="M30 65 C 35 75, 65 75, 70 65" stroke="#422819" stroke-width="4" fill="transparent" stroke-linecap="round"/>
+  <g id="left-eye">
+    <path d="M25,40 C30,30 45,30 48,40" stroke="#422819" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="36" cy="46" rx="6" ry="8" fill="#422819"/>
+    <circle cx="34" cy="44" r="2" fill="white"/>
+    <path d="M30,53 C32,58 40,58 42,53" fill="#2196F3"/>
+    <path d="M30,53 C32,58 40,58 42,53" stroke="#1976D2" stroke-width="0.5" fill="none"/>
+  </g>
+  <g id="right-eye">
+    <path d="M75,40 C70,30 55,30 52,40" stroke="#422819" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="64" cy="46" rx="6" ry="8" fill="#422819"/>
+    <circle cx="66" cy="44" r="2" fill="white"/>
+    <path d="M58,53 C60,58 68,58 70,53" fill="#2196F3"/>
+    <path d="M58,53 C60,58 68,58 70,53" stroke="#1976D2" stroke-width="0.5" fill="none"/>
+  </g>
 </svg>
