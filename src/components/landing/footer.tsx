@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-primary text-primary-foreground">
       <div className="container py-6 flex items-center justify-between flex-col sm:flex-row gap-4">
         <div className="flex items-center gap-2">
-          <Image src="/logog.svg" alt="Apinkgo Pointify Consulting Logo" width={160} height={43} />
+          <Image src="/logog.svg" alt="Apinkgo Pointify Consulting Logo" width={100} height={27} />
         </div>
         <div className="flex flex-col items-center sm:items-end gap-2">
           <p className="text-sm text-primary-foreground/70">
