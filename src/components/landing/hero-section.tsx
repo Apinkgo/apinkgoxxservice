@@ -1,23 +1,17 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
-
   return (
-    <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
+    <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white overflow-hidden">
+      <video
+        src="/12662101_1920_1080_30fps.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
+      />
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 container max-w-4xl px-4">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
