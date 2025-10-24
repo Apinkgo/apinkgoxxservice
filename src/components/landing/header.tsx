@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button';
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 max-w-screen-2xl items-center">
+      <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center">
-          <Image src="/logog.svg" alt="Apinkgo Pointify Consulting Logo" width={240} height={65} priority />
+          <Image src="/logog.svg" alt="Apinkgo Pointify Consulting Logo" width={216} height={58} priority />
         </Link>
-        <nav className="flex flex-1 items-center justify-end space-x-2">
+        <nav className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild variant="ghost">
             <Link href="/#skills">Keahlian</Link>
           </Button>
