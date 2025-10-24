@@ -2,9 +2,34 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pointify.web.app';
+const title = 'Pointify Consulting';
+const description = 'Membantu bisnis Anda bertransformasi secara digital.';
+
 export const metadata: Metadata = {
-  title: 'Pointify Consulting',
-  description: 'Membantu bisnis Anda bertransformasi secara digital.',
+  title: title,
+  description: description,
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    type: 'website',
+    url: siteUrl,
+    title: title,
+    description: description,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: title,
+    description: description,
+    images: [`${siteUrl}/og-image.png`],
+  },
 };
 
 export default function RootLayout({
