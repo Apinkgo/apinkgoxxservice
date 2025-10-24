@@ -1,19 +1,18 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <title>Winking Emoji Favicon</title>
-    <defs>
-        <radialGradient id="grad" cx="50%" cy="40%" r="60%" fx="50%" fy="40%">
-            <stop offset="0%" style="stop-color:rgb(255,255,150);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(255,220,0);stop-opacity:1" />
-        </radialGradient>
-    </defs>
-    <circle cx="128" cy="128" r="120" fill="url(#grad)" stroke="rgba(0,0,0,0.1)" stroke-width="4"/>
-    
-    <!-- Left eye (wink) -->
-    <path d="M 80 115 C 90 105, 110 105, 120 115" stroke="#333" stroke-width="10" fill="none" stroke-linecap="round"/>
-    
-    <!-- Right eye -->
-    <circle cx="170" cy="110" r="12" fill="#333"/>
-    
-    <!-- Smile -->
-    <path d="M 90 160 Q 128 190, 166 160" stroke="#333" stroke-width="10" fill="none" stroke-linecap="round"/>
+<svg viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="faceGradient" cx="0.5" cy="0.4" r="0.6">
+<stop offset="0%" stop-color="#FFD200"/>
+<stop offset="100%" stop-color="#FF4500"/>
+</radialGradient>
+</defs>
+<circle cx="128" cy="128" r="128" fill="url(#faceGradient)"/>
+<path d="M189.5 142.75C189.5 152.25 182 160 172.5 160C163 160 155.5 152.25 155.5 142.75C155.5 133.25 163 125.5 172.5 125.5C182 125.5 189.5 133.25 189.5 142.75Z" fill="#2F1B12"/>
+<path d="M100.5 142.75C100.5 152.25 93 160 83.5 160C74 160 66.5 152.25 66.5 142.75C66.5 133.25 74 125.5 83.5 125.5C93 125.5 100.5 133.25 100.5 142.75Z" fill="#2F1B12"/>
+<circle cx="166" cy="134" r="8" fill="white"/>
+<circle cx="77" cy="134" r="8" fill="white"/>
+<path d="M148 127L192 107" stroke="#2F1B12" stroke-width="14" stroke-linecap="round"/>
+<path d="M108 127L64 107" stroke="#2F1B12" stroke-width="14" stroke-linecap="round"/>
+<path d="M189 158C191 168 185 178 173 178C161 178 155 168 157 158" fill="#3498DB"/>
+<path d="M100 158C102 168 96 178 84 178C72 178 66 168 68 158" fill="#3498DB"/>
+<path d="M90 180C90 175, 166 175, 166 180C166 205, 90 205, 90 180Z" fill="#2F1B12"/>
 </svg>
