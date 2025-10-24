@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center text-center text-white overflow-hidden">
       <video
-        src="/12662101_1920_1080_30fps.mp4"
+        src="/download (1).mp4"
         autoPlay
         loop
         muted
