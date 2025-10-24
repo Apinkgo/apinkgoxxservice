@@ -1,18 +1,56 @@
-<svg viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<radialGradient id="faceGradient" cx="0.5" cy="0.4" r="0.6">
-<stop offset="0%" stop-color="#FFD200"/>
-<stop offset="100%" stop-color="#FF4500"/>
-</radialGradient>
-</defs>
-<circle cx="128" cy="128" r="128" fill="url(#faceGradient)"/>
-<path d="M189.5 142.75C189.5 152.25 182 160 172.5 160C163 160 155.5 152.25 155.5 142.75C155.5 133.25 163 125.5 172.5 125.5C182 125.5 189.5 133.25 189.5 142.75Z" fill="#2F1B12"/>
-<path d="M100.5 142.75C100.5 152.25 93 160 83.5 160C74 160 66.5 152.25 66.5 142.75C66.5 133.25 74 125.5 83.5 125.5C93 125.5 100.5 133.25 100.5 142.75Z" fill="#2F1B12"/>
-<circle cx="166" cy="134" r="8" fill="white"/>
-<circle cx="77" cy="134" r="8" fill="white"/>
-<path d="M148 127L192 107" stroke="#2F1B12" stroke-width="14" stroke-linecap="round"/>
-<path d="M108 127L64 107" stroke="#2F1B12" stroke-width="14" stroke-linecap="round"/>
-<path d="M189 158C191 168 185 178 173 178C161 178 155 168 157 158" fill="#3498DB"/>
-<path d="M100 158C102 168 96 178 84 178C72 178 66 168 68 158" fill="#3498DB"/>
-<path d="M90 180C90 175, 166 175, 166 180C166 205, 90 205, 90 180Z" fill="#2F1B12"/>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    @keyframes beam-animation {
+        0% { opacity: 0.5; }
+        50% { opacity: 0.8; }
+        100% { opacity: 0.5; }
+    }
+    @keyframes robot-float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+    .beam {
+        animation: beam-animation 3s infinite;
+    }
+    .robot {
+        animation: robot-float 2s infinite ease-in-out;
+    }
+</style>
+<g>
+    <!-- UFO Main Body -->
+    <path d="M 30,130 C 30,100 70,80 128,80 C 186,80 226,100 226,130 L 30,130 Z" fill="#C0C0C0"/>
+    <path d="M 38,130 C 38,110 75,95 128,95 C 181,95 218,110 218,130 L 38,130 Z" fill="#D3D3D3"/>
+    
+    <!-- UFO Dome -->
+    <path d="M 90,80 A 38,38 0 0,1 166,80 Z" fill="#7AF0F5" opacity="0.8"/>
+    <!-- Alien -->
+    <path d="M 120,78 A 12,12 0 1,1 136,78 A 12,12 0 0,1 120,78 Z" fill="#3D7E81"/>
+    <path d="M 128,60 L 122,80 L 134,80 Z" fill="#3D7E81" />
+
+    <!-- UFO Lights -->
+    <circle cx="60" cy="130" r="8" fill="#AFFFFF"/>
+    <circle cx="95" cy="138" r="8" fill="#AFFFFF"/>
+    <circle cx="128" cy="140" r="8" fill="#AFFFFF"/>
+    <circle cx="161" cy="138" r="8" fill="#AFFFFF"/>
+    <circle cx="196" cy="130" r="8" fill="#AFFFFF"/>
+    
+    <!-- Tractor Beam -->
+    <path class="beam" d="M 90,145 L 70,230 L 186,230 L 166,145 Z" fill="#7AF0F5"/>
+    
+    <!-- Robot -->
+    <g class="robot" transform="translate(0, -5)">
+        <rect x="104" y="170" width="48" height="40" fill="#B22222" rx="4"/>
+        <rect x="100" y="166" width="56" height="44" fill="#C0C0C0" rx="6"/>
+        <!-- Eyes -->
+        <circle cx="118" cy="184" r="6" fill="#AFFFFF"/>
+        <circle cx="138" cy="184" r="6" fill="#AFFFFF"/>
+        <!-- Mouth -->
+        <rect x="114" y="196" width="28" height="4" fill="#696969"/>
+        <path d="M115 197 h2 v2 h-2z m4 0 h2 v2 h-2z m4 0 h2 v2 h-2z m4 0 h2 v2 h-2z m4 0 h2 v2 h-2z m4 0 h2 v2 h-2z" fill="white"/>
+        <!-- Antenna -->
+        <line x1="128" y1="166" x2="128" y2="156" stroke="#696969" stroke-width="2"/>
+        <circle cx="128" cy="154" r="3" fill="#696969"/>
+    </g>
+</g>
 </svg>
