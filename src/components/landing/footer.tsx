@@ -1,12 +1,11 @@
-import { Package } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container py-6 flex items-center justify-between flex-col sm:flex-row gap-4">
         <div className="flex items-center gap-2">
-          <Package className="h-5 w-5" />
-          <span className="font-bold">Pointify Consulting – Partner Digital Lokal Ngana</span>
+          <Image src="/logo.svg" alt="Apinkgo Pointify Consulting Logo" width={180} height={48} />
         </div>
         <div className="flex flex-col items-center sm:items-end gap-2">
           <p className="text-sm text-primary-foreground/70">
