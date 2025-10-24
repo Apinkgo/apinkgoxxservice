@@ -1,32 +1,19 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="faceGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" style="stop-color:rgb(255,204,0);stop-opacity:1" />
-      <stop offset="100%" style="stop-color:rgb(255,85,0);stop-opacity:1" />
-    </radialGradient>
-  </defs>
-
-  <!-- Face -->
-  <circle cx="50" cy="50" r="48" fill="url(#faceGradient)" />
-
-  <!-- Eyes with tears -->
-  <g>
-    <!-- Left Eye -->
-    <path d="M 30 50 C 30 45, 40 45, 40 50 C 40 55, 30 55, 30 50 Z" fill="#2d2d2d" />
-    <circle cx="35" cy="48" r="3" fill="white" />
-    <path d="M 32 55 C 30 62, 38 62, 36 55 Z" fill="#007bff" />
-  </g>
-  <g>
-    <!-- Right Eye -->
-    <path d="M 60 50 C 60 45, 70 45, 70 50 C 70 55, 60 55, 60 50 Z" fill="#2d2d2d" />
-    <circle cx="65" cy="48" r="3" fill="white" />
-    <path d="M 62 55 C 60 62, 68 62, 66 55 Z" fill="#007bff" />
-  </g>
-
-  <!-- Eyebrows -->
-  <path d="M 25 40 C 30 35, 45 38, 45 38 C 40 42, 25 40, 25 40 Z" fill="#2d2d2d" />
-  <path d="M 75 40 C 70 35, 55 38, 55 38 C 60 42, 75 40, 75 40 Z" fill="#2d2d2d" />
-
-  <!-- Mouth -->
-  <path d="M 35 70 Q 50 85, 65 70 Q 50 75, 35 70" fill="#2d2d2d" />
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <title>Winking Emoji Favicon</title>
+    <defs>
+        <radialGradient id="grad" cx="50%" cy="40%" r="60%" fx="50%" fy="40%">
+            <stop offset="0%" style="stop-color:rgb(255,255,150);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(255,220,0);stop-opacity:1" />
+        </radialGradient>
+    </defs>
+    <circle cx="128" cy="128" r="120" fill="url(#grad)" stroke="rgba(0,0,0,0.1)" stroke-width="4"/>
+    
+    <!-- Left eye (wink) -->
+    <path d="M 80 115 C 90 105, 110 105, 120 115" stroke="#333" stroke-width="10" fill="none" stroke-linecap="round"/>
+    
+    <!-- Right eye -->
+    <circle cx="170" cy="110" r="12" fill="#333"/>
+    
+    <!-- Smile -->
+    <path d="M 90 160 Q 128 190, 166 160" stroke="#333" stroke-width="10" fill="none" stroke-linecap="round"/>
 </svg>
