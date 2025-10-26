@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { BrainCircuit, BarChart3, Lightbulb, ClipboardCheck, Tag } from 'lucide-react';
+import { BrainCircuit, BarChart3, Lightbulb, ClipboardCheck, Tag, FileJson, ShieldCheck } from 'lucide-react';
 
 const skills = [
   {
@@ -27,6 +27,16 @@ const skills = [
     title: "Branding & ID Digital Produk",
     description: "Dari logo, desain, sampe teknologi tag digital buat naikkan nilai produk lokal."
   },
+  {
+    icon: <FileJson className="h-10 w-10 text-primary" />,
+    title: "Pengembangan Smart Contract",
+    description: "Membangun aplikasi terdesentralisasi (DApps) dan kontrak pintar (smart contract) dengan Solidity di berbagai jaringan EVM."
+  },
+  {
+    icon: <ShieldCheck className="h-10 w-10 text-primary" />,
+    title: "Audit Smart Contract",
+    description: "Menganalisis dan menguji keamanan smart contract untuk memastikan tidak ada kerentanan sebelum diluncurkan."
+  },
 ]
 
 export default function SkillsSection() {
@@ -39,7 +49,7 @@ export default function SkillsSection() {
             Torang gabungkan pengalaman lapangan sama teknologi biar hasilnya nyata.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {skills.map((skill, index) => (
             <Card key={index} className="flex flex-col p-6 transition-shadow duration-300 hover:shadow-xl bg-card">
               <div className="mb-4">{skill.icon}</div>
