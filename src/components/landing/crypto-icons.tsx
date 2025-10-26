@@ -1,4 +1,5 @@
-// Custom Crypto Icons to avoid dependency issues with react-crypto-icons and React 18
+// Custom Crypto Icons based on cryptocurrency-icons by spothq (https://github.com/spothq/cryptocurrency-icons)
+// No dependency issues with React 18
 
 type IconProps = {
   size?: number | string;
@@ -10,20 +11,16 @@ export const Btc = ({ size = 24, className }: IconProps) => (
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
-    viewBox="0 0 24 24"
+    viewBox="0 0 32 32"
     fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
     className={className}
-    color="#f7931a"
   >
-    <path d="M18.21 7.42a4.24 4.24 0 0 0-5.3-1.61 4.24 4.24 0 0 0-3.32 4.14v4.24h2.55V9.45a1.68 1.68 0 0 1 1.7-1.67c.88 0 1.7.74 1.7 1.64v8.32h2.55v-8.4a4.24 4.24 0 0 0-2.43-3.9zM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
-    <path d="M14.7 13.23h-5.46" />
-    <path d="M14.7 10.1h-5.46" />
-    <path d="M11.97 18.2v-2.14" />
-    <path d="M11.97 7.93V5.8" />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM24.4627 15.1521C25.1343 16.386 25.1213 17.8423 24.4627 19.141C23.6866 20.6552 22.1075 21.6567 20.3104 21.6567H19.0448V25.3433H15.9104V21.6567H13.791V25.3433H10.6567V21.6567H9.39104C8.58507 21.6567 8 21.0716 8 20.2657V11.403C8 10.597 8.58507 10.0119 9.39104 10.0119H10.6567V6.32537H13.791V10.0119H15.9104V6.32537H19.0448V10.0119H20.3104C22.1075 10.0119 23.6866 11.0134 24.4627 12.5276V12.5925C25.1213 13.891 25.1343 15.1521 24.4627 15.1521ZM13.791 18.5254H20.197C20.8955 18.5254 21.6119 18.0642 21.8985 17.3806C22.1851 16.697 22.1851 15.8209 21.8985 15.1373C21.6119 14.4537 20.8955 13.9925 20.197 13.9925H13.791V18.5254Z"
+      fill="#F7931A"
+    />
   </svg>
 );
 
@@ -32,75 +29,129 @@ export const Eth = ({ size = 24, className }: IconProps) => (
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
-    viewBox="0 0 24 24"
+    viewBox="0 0 32 32"
     fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
     className={className}
-    color="#627eea"
   >
-    <path d="m12 3.8-8.2 6.4 8.2 6.4 8.2-6.4z" />
-    <path d="m12 3.8 8.2 6.4" />
-    <path d="m12 16.6-8.2-6.4" />
-    <path d="M12 21v-4.4" />
-    <path d="M3.8 10.2 12 16.6l8.2-6.4" />
+    <path
+      d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+      fill="#627EEA"
+    />
+    <path
+      d="M16.0003 4.43005L15.8613 5.04505V19.748L16.0003 19.887L23.9053 15.357L16.0003 4.43005Z"
+      fill="#FFFFFF"
+      fill-opacity="0.602"
+    />
+    <path
+      d="M16 4.43005L8.095 15.357L16 19.887V4.43005Z"
+      fill="#FFFFFF"
+    />
+    <path
+      d="M16.0003 21.6031L15.9183 21.7211V27.1161L16.0003 27.5691L23.9083 17.0721L16.0003 21.6031Z"
+      fill="#FFFFFF"
+      fill-opacity="0.602"
+    />
+    <path
+      d="M16 27.5691V21.6031L8.095 17.0721L16 27.5691Z"
+      fill="#FFFFFF"
+    />
+    <path
+      d="M16 19.887L23.905 15.357L16 11.828L16 19.887Z"
+      fill="#FFFFFF"
+      fill-opacity="0.2"
+    />
+    <path
+      d="M8.095 15.357L16 19.887V11.828L8.095 15.357Z"
+      fill="#FFFFFF"
+      fill-opacity="0.602"
+    />
   </svg>
 );
 
 export const Usdc = ({ size = 24, className }: IconProps) => (
-    <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width={size} 
-        height={size} 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        className={className}
-        color="#2775ca"
-    >
-        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M14.53 14.39c-1.34.8-3.07.8-4.41 0-.6-.35-.97-1-.97-1.7V10.1c0-.6.3-1.12.8-1.48 1.48-1.05 3.5-1.05 4.98 0 .5.36.8 1 .8 1.58v1.31c0 .6-.3 1.12-.8 1.48z"/>
-        <path d="M12 15.5v-7"/>
-    </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    fill="none"
+    className={className}
+  >
+    <path
+      d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+      fill="#2775CA"
+    />
+    <path
+      d="M19.9877 10.3707C18.4735 9.88959 16.8944 9.7506 15.3478 9.96782C14.8696 10.0383 14.4175 10.2227 14.018 10.5053C13.0648 11.1685 12.8037 12.4418 13.4344 13.4475L13.5312 13.6093C14.0123 14.343 14.8696 14.7707 15.7728 14.7707H18.9897C19.6383 14.7707 20.1963 14.2221 20.1963 13.5734C20.1963 12.9248 19.6383 12.3762 18.9897 12.3762H16.2905C16.5161 11.6425 17.0741 11.1288 17.7773 11.0257C18.3679 10.9412 18.9711 11.0779 19.4678 11.4288L19.9877 10.3707Z"
+      fill="white"
+    />
+    <path
+      d="M18.8465 17.2282H15.6296C14.981 17.2282 14.4231 17.7768 14.4231 18.4254C14.4231 19.074 14.981 19.6226 15.6296 19.6226H18.3289C18.1032 20.3563 17.5452 20.87 16.842 20.9731C16.2514 21.0576 15.6482 20.9209 15.1514 20.57L14.6316 21.6282C16.1458 22.1093 17.7248 22.2482 19.2714 22.031C19.7496 21.9605 20.1996 21.7761 20.6012 21.4935C21.5545 20.8303 21.8155 19.557 21.1848 18.5513L21.088 18.3895C20.6069 17.6558 19.7496 17.2282 18.8465 17.2282Z"
+      fill="white"
+    />
+  </svg>
 );
 
 export const Usdt = ({ size = 24, className }: IconProps) => (
-    <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width={size} 
-        height={size} 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
-        className={className}
-        color="#26a17b"
-    >
-        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M14 9.5h-4V12h1.5v2.5h1V12H14V9.5z"/>
-    </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    fill="none"
+    className={className}
+  >
+    <path
+      d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+      fill="#26A17B"
+    />
+    <path
+      d="M20.5714 10.9524H18.2857V8H13.7143V10.9524H11.4286V13.8095H13.7143V20.8571C13.7143 22.0476 14.1214 22.9286 14.9357 23.4929C15.75 24.0571 16.8571 24.3429 18.2857 24.3429V21.4857C17.5714 21.4857 17.1429 21.3429 16.9286 21.0571C16.8214 20.9048 16.7679 20.7 16.7679 20.4429V13.8095H20.5714V10.9524Z"
+      fill="white"
+    />
+  </svg>
 );
 
 export const Bnb = ({ size = 24, className }: IconProps) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={className}
-        color="#f0b90b"
-    >
-        <path d="M4 12.83V11.2L12 7l8 4.2v1.63L12 17l-8-4.17zM12 21l8-4.2V9.8L12 14l-8-4.2v6.98L12 21zM12 3L4 7.2v1.6L12 13l8-4.2V7.2L12 3z"/>
-        <path d="m16.5 10.5-4.5 2.5-4.5-2.5"/>
-    </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    fill="none"
+    className={className}
+  >
+    <path
+      d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+      fill="#F0B90B"
+    />
+    <path
+      d="M8.28424 16.0005L11.5362 12.7485L13.7582 14.9705L16.0012 12.7275L18.2422 14.9705L20.4642 12.7485L23.7162 16.0005L20.4642 19.2525L18.2422 17.0295L16.0012 19.2725L13.7582 17.0295L11.5362 19.2525L8.28424 16.0005Z"
+      fill="white"
+    />
+    <path
+      d="M16 8.2843L19.252 11.5363L16 14.7883L12.748 11.5363L16 8.2843Z"
+      fill="white"
+    />
+    <path
+      d="M16 23.7162L12.748 20.4642L16 17.2122L19.252 20.4642L16 23.7162Z"
+      fill="white"
+    />
+    <path
+      d="M23.7157 8.2843L20.4637 11.5363L22.1397 13.2123L25.3917 10.0003L23.7157 8.2843Z"
+      fill="white"
+    />
+    <path
+      d="M8.28424 23.7162L11.5362 20.4642L9.86024 18.7882L6.60824 22.0002L8.28424 23.7162Z"
+      fill="white"
+    />
+    <path
+      d="M22.1397 18.7882L20.4637 20.4642L23.7157 23.7162L25.3917 22.0002L22.1397 18.7882Z"
+      fill="white"
+    />
+    <path
+      d="M9.86024 13.2123L11.5362 11.5363L8.28424 8.2843L6.60824 10.0003L9.86024 13.2123Z"
+      fill="white"
+    />
+  </svg>
 );
