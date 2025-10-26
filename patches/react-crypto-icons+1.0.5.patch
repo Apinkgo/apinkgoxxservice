@@ -1,0 +1,14 @@
+diff --git a/node_modules/react-crypto-icons/package.json b/node_modules/react-crypto-icons/package.json
+index 2c64883..74325c1 100644
+--- a/node_modules/react-crypto-icons/package.json
++++ b/node_modules/react-crypto-icons/package.json
+@@ -51,6 +51,6 @@
+     "react-dom": "^17.0.2"
+   },
+   "peerDependencies": {
+-    "react": "^17.0.2",
+-    "react-dom": "^17.0.2"
++    "react": ">=17",
++    "react-dom": ">=17"
+   }
+ }
