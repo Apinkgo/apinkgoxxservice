@@ -8,6 +8,19 @@ const GopayIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
+const DinarkrIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <defs>
+            <radialGradient id="gold_grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style={{ stopColor: '#FDE08D', stopOpacity: 1 }} />
+                <stop offset="50%" style={{ stopColor: '#D8A441', stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: '#A77715', stopOpacity: 1 }} />
+            </radialGradient>
+        </defs>
+        <circle cx="12" cy="12" r="12" fill="url(#gold_grad)" />
+        <path d="M12 7C10.3 8.9 9 11.2 9 13.5C9 16.5 11.5 18 12 18C12.5 18 15 16.5 15 13.5C15 11.2 13.7 8.9 12 7Z" fill="#FDE08D" fillOpacity="0.7" />
+    </svg>
+);
 
 const PaymentIcon = ({ icon, name }: { icon: React.ReactNode, name: string }) => (
     <div className="flex items-center gap-2 text-primary-foreground/80">
@@ -23,7 +36,7 @@ export function AcceptedPayments() {
         <div className="flex flex-wrap items-center justify-center gap-6">
             <PaymentIcon name="Cash/Fiat" icon={<Landmark width={24} height={24} />} />
             <PaymentIcon name="Gopay" icon={<GopayIcon />} />
-            <PaymentIcon name="Dinarkr" icon={<CircleDollarSign width={24} height={24} />} />
+            <PaymentIcon name="Dinarkr" icon={<DinarkrIcon />} />
             <PaymentIcon name="Bitcoin" icon={<Image src="/icons/crypto/btc.svg" alt="Bitcoin" width={24} height={24} />} />
             <PaymentIcon name="Ethereum" icon={<Image src="/icons/crypto/eth.svg" alt="Ethereum" width={24} height={24} />} />
             <PaymentIcon name="USDC" icon={<Image src="/icons/crypto/usdc.svg" alt="USDC" width={24} height={24} />} />
