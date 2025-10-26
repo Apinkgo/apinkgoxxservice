@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import { CryptoPayments } from './crypto-payments';
+import { AcceptedPayments } from './accepted-payments';
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container py-6 flex flex-col items-center justify-center gap-6">
-        <CryptoPayments />
+        <AcceptedPayments />
         <div className="w-full flex items-center justify-between flex-col sm:flex-row gap-4">
           <div className="flex items-center gap-2">
             <Image src="/logog.svg" alt="Apinkgo Pointify Consulting Logo" width={100} height={27} />
