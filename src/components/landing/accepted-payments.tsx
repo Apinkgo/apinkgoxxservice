@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Landmark } from 'lucide-react';
+import { Landmark, CircleDollarSign } from 'lucide-react';
 
 const GopayIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
@@ -23,6 +23,7 @@ export function AcceptedPayments() {
         <div className="flex flex-wrap items-center justify-center gap-6">
             <PaymentIcon name="Cash/Fiat" icon={<Landmark width={24} height={24} />} />
             <PaymentIcon name="Gopay" icon={<GopayIcon />} />
+            <PaymentIcon name="Dinarkr" icon={<CircleDollarSign width={24} height={24} />} />
             <PaymentIcon name="Bitcoin" icon={<Image src="/icons/crypto/btc.svg" alt="Bitcoin" width={24} height={24} />} />
             <PaymentIcon name="Ethereum" icon={<Image src="/icons/crypto/eth.svg" alt="Ethereum" width={24} height={24} />} />
             <PaymentIcon name="USDC" icon={<Image src="/icons/crypto/usdc.svg" alt="USDC" width={24} height={24} />} />
