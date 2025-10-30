@@ -1,0 +1,20 @@
+import { MetadataRoute } from 'next';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pointify.web.app';
+
+  return [
+    {
+      url: siteUrl,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 1,
+    },
+    {
+      url: `${siteUrl}/portfolio`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+  ];
+}
