@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://kost-fauzan.vercel.app/';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://apinkgoservice.vercel.app/';
 const title = 'Pointify Consulting';
 const description = 'Membantu bisnis Anda bertransformasi secara digital.';
 
