@@ -1,14 +1,13 @@
+import Link from 'next/link';
+
 export default function NewsPage() {
   const articles = [
     {
-      slug: 'welcome-to-apink-news',
-      title: 'Welcome to Apink News',
-      excerpt: 'Portal berita resmi untuk publikasi dan update terbaru.'
-    },
-    {
-      slug: 'digital-transformation',
-      title: 'Digital Transformation',
-      excerpt: 'Perkembangan produk, teknologi, dan inovasi.'
+      slug: 'perjalanan-transformasi-digital-gdp-bablla',
+      title: 'Perjalanan Transformasi Digital di Lingkungan GDP dan PT Bablla',
+      excerpt: 'Perjalanan pengembangan sistem, integrasi data, cloud computing, dan transformasi digital dalam mendukung berbagai inisiatif bisnis di lingkungan GDP dan PT Bablla.',
+      category: 'Technology',
+      date: '2026-06-05'
     }
   ];
 
@@ -19,10 +18,16 @@ export default function NewsPage() {
 
       <div className="grid gap-6">
         {articles.map((article) => (
-          <article key={article.slug} className="border rounded-xl p-6">
-            <h2 className="text-2xl font-semibold mb-2">{article.title}</h2>
-            <p>{article.excerpt}</p>
-          </article>
+          <Link key={article.slug} href={`/news/${article.slug}`}>
+            <article className="border rounded-xl p-6 hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="text-sm mb-2 opacity-70">
+                {article.category} • {article.date}
+              </div>
+              <h2 className="text-2xl font-semibold mb-2">{article.title}</h2>
+              <p>{article.excerpt}</p>
+              <div className="mt-4 font-medium">Baca selengkapnya →</div>
+            </article>
+          </Link>
         ))}
       </div>
     </main>
